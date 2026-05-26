@@ -138,19 +138,20 @@
           <p>
             We are dedicated to maintaining a high standard of document privacy. The App is engineered as a privacy-focused tool where your source files are processed client-side. We do not inspect your document contents, nor do we run background user tracking utilities.
           </p>
+          <p>
+            <strong>Contact Email:</strong> <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>
+          </p>
 
           <h3>2. Information We Collect</h3>
           
           <h4>2.1 Information We Collect Automatically</h4>
           <p><strong>Anonymous User Identifier</strong></p>
           <p>
-            When you first launch the App, we automatically create an anonymous account on your behalf using Supabase, our backend provider. This account is identified only by a randomly generated UUID (a string like <code>a3f9c1d2-...</code>). This ID contains no personal information and is not linked to your name, email address, or any other identifying information unless you choose to link an account (see Section 2.3).
+            When you first launch the App, we automatically create an anonymous account on your behalf using Supabase, our backend provider. This account is identified only by a randomly generated UUID (a string like <code>a3f9c1d2-...</code>). This ID contains no personal information and is not linked to your name, email address, or any other identifying information unless you choose to link an account.
           </p>
-          <p>We store the following associated with your anonymous ID in our remote database:</p>
-          <ul>
-            <li>Whether you have an active premium subscription</li>
-            <li>Your subscription expiration date (if applicable)</li>
-          </ul>
+          <p>
+            This ID is used solely to maintain your session within the App.
+          </p>
 
           <p><strong>Device Storage (Local Only — Never Uploaded)</strong></p>
           <p>
@@ -173,12 +174,7 @@
             <li>Device identifiers such as IMEI or MAC address (this is outside our app's code)</li>
           </ul>
 
-          <h4>2.3 Information You May Voluntarily Provide</h4>
-          <p>
-            If you choose to purchase a premium subscription, you may optionally link your Apple ID, Google account, or email address to your anonymous account. This is encouraged so your subscription persists if you reinstall the App. If you choose to link an account, we will store your email address or linked account identifier in our Supabase database.
-          </p>
-
-          <h4>2.4 Information Collected by Third Parties</h4>
+          <h4>2.3 Information Collected by Third Parties</h4>
           <p>
             The App integrates third-party services that have their own privacy practices. We do not control the data these services collect.
           </p>
@@ -191,18 +187,11 @@
                 <p>Free users see non-personalized interstitial advertisements rated PG with child-directed settings enabled.</p>
               </div>
             </a>
-            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-solid fa-receipt service-brand google-color"></i>
-              <div class="service-details">
-                <h4>RevenueCat (Subscriptions - iOS)</h4>
-                <p>Processes transaction details, billing events, and iOS subscription states securely.</p>
-              </div>
-            </a>
             <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
               <i class="fa-solid fa-database service-brand firebase-color"></i>
               <div class="service-details">
                 <h4>Supabase (Backend Infrastructure)</h4>
-                <p>Powers our database system and processes anonymous user UUIDs and subscription parameters securely.</p>
+                <p>Powers our database system and processes anonymous user UUIDs securely.</p>
               </div>
             </a>
           </div>
@@ -211,9 +200,7 @@
           <p>We use the information described above to:</p>
           <ul>
             <li>Create and maintain your anonymous account</li>
-            <li>Track your premium subscription status so you receive the correct experience</li>
-            <li>Serve non-personalized advertisements to free users</li>
-            <li>Process in-app purchases and restore them on reinstall (if you link an account)</li>
+            <li>Serve non-personalized advertisements</li>
             <li>Maintain your theme preference and recent file list locally on your device</li>
           </ul>
           <p>We absolutely do not use your information for behavioral advertising or data renting.</p>
@@ -286,7 +273,7 @@
 
           <h3>7. Data Security</h3>
           <p>
-            All communication between the App and our servers (Supabase) uses HTTPS encryption. Your anonymous session token is stored securely using SQLite-based local storage provided by Expo. We do not store payment card information — all payment processing is handled by Apple's App Store or Google Play Store systems.
+            All communication between the App and our servers (Supabase) uses HTTPS encryption. Your anonymous session token is stored securely using SQLite-based local storage provided by Expo. We do not store payment card information — all payment processing is handled by Apple's App Store.
           </p>
 
           <h3>8. Children's Privacy</h3>
@@ -297,8 +284,17 @@
           <h3>9. Your Rights</h3>
           <p><strong>All Users:</strong></p>
           <p>
-            Request deletion of your anonymous account and associated data by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Because your account is anonymous, we may ask you to provide your anonymous user ID (visible in app settings) or other verification.
+            Request deletion of your anonymous account and associated data by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Because your account is anonymous, we may ask you to provide your anonymous user ID or other verification.
           </p>
+
+          <div class="callout info-callout">
+            <div class="callout-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="callout-content">
+              <h4>Turkey (KVKK — Protection of Personal Data)</h4>
+              <p>As the data controller (veri sorumlusu), artokn processes personal data in accordance with Turkish Law No. 6698 on the Protection of Personal Data (KVKK). Under Article 11 of KVKK, you hold rights to learn of processed data, check details, request rectification or erasure under Article 7, and object to outcomes arising from automated processing. To exercise KVKK rights, submit your request to <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. You may also appeal to the KVKK Board at www.kvkk.gov.tr.</p>
+            </div>
+          </div>
+
           <p><strong>European Union / EEA (GDPR):</strong></p>
           <p>
             You hold rights to access, rectification, erasure ("right to be forgotten"), restriction of processing, data portability, and the right to lodge complaints with a supervisory authority.
@@ -314,7 +310,6 @@
             <div>
               <h4>artokn support</h4>
               <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
-              <p>Contact for Deletion: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -360,7 +355,7 @@
             <li>Create PDFs from text</li>
           </ul>
           <p>
-            The App functions primarily offline. An internet connection is required for account initialization and, on iOS, for purchasing premium subscriptions.
+            The App functions primarily offline. An internet connection is required for account initialization.
           </p>
 
           <h3>2. License Grant</h3>
@@ -382,36 +377,25 @@
             The App automatically creates an anonymous account when you first launch it. No personal information is required. This anonymous account is used only to track your premium subscription status (if applicable).
           </p>
           <p>
-            <strong>Account Linking (Optional):</strong> You may optionally link your Apple ID, Google account, or email address to your anonymous account to preserve your subscription entitlements across reinstalls.
-          </p>
-          <p>
-            <strong>Account Termination:</strong> You may request deletion of your anonymous account at any time by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>.
+            <strong>Account Termination:</strong> You may request deletion of your anonymous account at any time by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Account deletion will remove your session data from our servers.
           </p>
 
-          <h3>5. Premium Subscriptions (iOS)</h3>
+          <h3>5. Advertisements</h3>
           <p>
-            The App offers the following premium subscription options for iOS users:
-          </p>
-          <ul>
-            <li><strong>Weekly subscription:</strong> Billed weekly, auto-renewing.</li>
-            <li><strong>Yearly subscription:</strong> Billed annually, auto-renewing, includes a 7-day free trial for new subscribers.</li>
-          </ul>
-          <p>Premium subscribers have access to all App features without advertisements.</p>
-          <p>
-            <strong>Free Trial:</strong> The yearly plan includes a 7-day trial. Your subscription begins unless cancelled 24 hours prior to the end of the trial period.
+            The App is free to use and is supported by interstitial advertisements provided by Google AdMob. Advertisements are served with non-personalized settings and child-safe content ratings.
           </p>
           <p>
-            <strong>Billing & Refunds:</strong> Subscriptions and renewals are managed by Apple through your Apple ID settings. All refunds must be requested directly through Apple. Android version purchase is currently not available; Android remains free with advertisements.
+            We are not responsible for the content of third-party advertisements displayed within the App.
           </p>
 
-          <h3>6. Advertisements</h3>
+          <h3>6. Intellectual Property</h3>
           <p>
-            Free users will see interstitial advertisements provided by Google AdMob approximately every two operations. Advertisements are served with non-personalized settings and child-safe content ratings. Premium subscribers do not see advertisements.
+            The App, including its design, code, graphics, and branding, is the property of artokn and is protected by copyright, trademark, and other intellectual property laws. Nothing in these Terms grants you any right, title, or interest in the App beyond the limited license described in Section 2.
           </p>
 
-          <h3>7. Intellectual Property</h3>
+          <h3>7. Privacy Policy</h3>
           <p>
-            The App, including its design, code, graphics, and branding, is the property of artokn and is protected by copyright, trademark, and other intellectual property laws.
+            Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. You can read the full Privacy Policy at the link provided in the App's settings screen.
           </p>
 
           <h3>8. Disclaimer of Warranties</h3>
@@ -434,7 +418,7 @@
 
           <h3>10. Governing Law</h3>
           <p>
-            These Terms are governed by and construed in accordance with applicable law. For users located in the European Union, mandatory consumer protection laws of your country of residence apply.
+            These Terms are governed by the laws of the Republic of Turkey. If you have a concern or dispute, please contact us first at <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a> and we will do our best to resolve it.
           </p>
 
           <h3>11. Contact Info</h3>
@@ -443,7 +427,6 @@
             <div>
               <h4>artokn Legal contact</h4>
               <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
-              <p>Support: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
             </div>
           </div>
         </div>
