@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF X - Privacy Policy & Terms of Service</title>
-  <meta name="description" content="Official Privacy Policy, Terms and Conditions, and Developer Information for the PDF X mobile application.">
+  <title>PDF X: Editor & Converter - Privacy Policy & Terms</title>
+  <meta name="description" content="Official Privacy Policy, Terms and Conditions for PDF X: Editor & Converter mobile application.">
   
   <!-- Premium Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,7 +93,7 @@
       </div>
       
       <h1 class="app-title">PDF X</h1>
-      <p class="app-subtitle">Ultimate PDF Tools, Document Converter, and Reader</p>
+      <p class="app-subtitle">Editor & Converter — Ultimate PDF Tools & Reader</p>
       
       <!-- Theme Switch Button -->
       <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle visual theme" title="Toggle Light/Dark Theme">
@@ -122,118 +122,199 @@
           <h2>Privacy Policy</h2>
           <div class="doc-meta">
             <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
-            <span><i class="fa-solid fa-shield"></i> Status: Active</span>
+            <span><i class="fa-solid fa-shield"></i> Developer: artokn</span>
           </div>
         </div>
         
         <div class="doc-body">
           <p class="lead-text">
-            This privacy policy applies to the <strong>PDF X</strong> app (herein referred to as "Application") for mobile devices, created by <strong>[Your Company or Developer Name]</strong> (herein referred to as "Service Provider") as a free/ad-supported service.
+            <strong>PDF X: Editor & Converter</strong> ("the App", "we", "our", or "us") is developed and operated by <strong>artokn</strong>. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use our App.
+          </p>
+          <p>
+            By using the App, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the App.
           </p>
 
-          <h3>1. Introduction & Overview</h3>
+          <h3>1. Introduction</h3>
           <p>
-            The Service Provider is committed to protecting and respecting your privacy. This policy governs how we collect, store, process, and protect your information when you download, install, or use the Application.
-          </p>
-          <p>
-            By downloading, installing, or using the Application, you agree to the collection and use of information in accordance with this policy. If you do not agree with these terms, please do not use the Application.
+            We are dedicated to maintaining a high standard of document privacy. The App is engineered as a privacy-focused tool where your source files are processed client-side. We do not inspect your document contents, nor do we run background user tracking utilities.
           </p>
 
-          <h3>2. Information Collection and Use</h3>
+          <h3>2. Information We Collect</h3>
+          
+          <h4>2.1 Information We Collect Automatically</h4>
+          <p><strong>Anonymous User Identifier</strong></p>
           <p>
-            The Application is designed as a client-side document processing tool. To provide a rich utility, the Application may request access to certain features on your mobile device:
+            When you first launch the App, we automatically create an anonymous account on your behalf using Supabase, our backend provider. This account is identified only by a randomly generated UUID (a string like <code>a3f9c1d2-...</code>). This ID contains no personal information and is not linked to your name, email address, or any other identifying information unless you choose to link an account (see Section 2.3).
           </p>
+          <p>We store the following associated with your anonymous ID in our remote database:</p>
           <ul>
-            <li><strong>Camera Access:</strong> Optional access used to capture images of documents to convert them to PDF files. All conversion is done locally on your device.</li>
-            <li><strong>Storage / Media Files:</strong> Required to load existing documents, images, and files for editing, merging, and converting to PDF formats.</li>
-            <li><strong>Network Access:</strong> Required to download resources, fetch configuration, load advertisements, and send anonymized usage telemetry.</li>
+            <li>Whether you have an active premium subscription</li>
+            <li>Your subscription expiration date (if applicable)</li>
           </ul>
 
+          <p><strong>Device Storage (Local Only — Never Uploaded)</strong></p>
+          <p>
+            The following data is stored exclusively on your device and is never transmitted to our servers or any third party:
+          </p>
+          <ul>
+            <li>A list of up to 10 recently opened PDF files (file name and path only)</li>
+            <li>Your theme preference (light, dark, or auto)</li>
+            <li>PDF files you create, edit, convert, or merge using the App</li>
+          </ul>
+
+          <h4>2.2 Information We Do NOT Collect</h4>
+          <p>We strictly do not collect or monitor:</p>
+          <ul>
+            <li>Your name, email address, or phone number (unless you voluntarily link an account)</li>
+            <li>Your precise or approximate location</li>
+            <li>Your contacts, calendar, or camera</li>
+            <li>Any content within your PDF files</li>
+            <li>Any behavioral analytics or usage tracking</li>
+            <li>Device identifiers such as IMEI or MAC address (this is outside our app's code)</li>
+          </ul>
+
+          <h4>2.3 Information You May Voluntarily Provide</h4>
+          <p>
+            If you choose to purchase a premium subscription, you may optionally link your Apple ID, Google account, or email address to your anonymous account. This is encouraged so your subscription persists if you reinstall the App. If you choose to link an account, we will store your email address or linked account identifier in our Supabase database.
+          </p>
+
+          <h4>2.4 Information Collected by Third Parties</h4>
+          <p>
+            The App integrates third-party services that have their own privacy practices. We do not control the data these services collect.
+          </p>
+
+          <div class="services-grid">
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-brands fa-google service-brand admob-color"></i>
+              <div class="service-details">
+                <h4>Google AdMob (Advertising)</h4>
+                <p>Free users see non-personalized interstitial advertisements rated PG with child-directed settings enabled.</p>
+              </div>
+            </a>
+            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-solid fa-receipt service-brand google-color"></i>
+              <div class="service-details">
+                <h4>RevenueCat (Subscriptions - iOS)</h4>
+                <p>Processes transaction details, billing events, and iOS subscription states securely.</p>
+              </div>
+            </a>
+            <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-solid fa-database service-brand firebase-color"></i>
+              <div class="service-details">
+                <h4>Supabase (Backend Infrastructure)</h4>
+                <p>Powers our database system and processes anonymous user UUIDs and subscription parameters securely.</p>
+              </div>
+            </a>
+          </div>
+
+          <h3>3. How We Use Your Information</h3>
+          <p>We use the information described above to:</p>
+          <ul>
+            <li>Create and maintain your anonymous account</li>
+            <li>Track your premium subscription status so you receive the correct experience</li>
+            <li>Serve non-personalized advertisements to free users</li>
+            <li>Process in-app purchases and restore them on reinstall (if you link an account)</li>
+            <li>Maintain your theme preference and recent file list locally on your device</li>
+          </ul>
+          <p>We absolutely do not use your information for behavioral advertising or data renting.</p>
+
+          <h3>4. Your Files and Documents</h3>
+          <p>
+            All PDF files you open, edit, convert, or create within the App remain on your device. File contents are never uploaded to our servers or any third party. When you use the share function, your device's native sharing system is used — we do not intercept or receive a copy of the shared file.
+          </p>
           <div class="callout warning-callout">
             <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
             <div class="callout-content">
-              <h4>Local Data Processing Notice</h4>
-              <p>Your PDF documents, images, and converted files are processed <strong>strictly on your device</strong>. We do not upload your personal documents to any remote servers. Your private files remain private.</p>
+              <h4>Temporary Document Clean-Up</h4>
+              <p>Temporary files created during editing or conversion operations (e.g., <code>converted_&lt;timestamp&gt;.pdf</code>) are stored in your device's application storage directory. These files are not automatically deleted. You can remove them by clearing the App's storage or uninstalling the App.</p>
             </div>
           </div>
 
-          <h3>3. Third-Party Services & APIs</h3>
-          <p>
-            The Application utilizes third-party services that may collect information used to identify you. Below are details and links to the privacy policies of the third-party service providers used by the Application:
-          </p>
-          
-          <div class="services-grid">
-            <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-brands fa-google service-brand google-color"></i>
-              <div class="service-details">
-                <h4>Google Play Services</h4>
-                <p>Authenticates users, manages app stores, and powers core app ecosystem components.</p>
-              </div>
-            </a>
-            <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-brands fa-google service-brand admob-color"></i>
-              <div class="service-details">
-                <h4>Google AdMob</h4>
-                <p>Delivers relevant and personalized advertising. Collects advertising identifiers (e.g., Ad ID).</p>
-              </div>
-            </a>
-            <a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-solid fa-fire service-brand firebase-color"></i>
-              <div class="service-details">
-                <h4>Google Analytics for Firebase</h4>
-                <p>Measures user interactions, screen views, and demographic events to improve app performance.</p>
-              </div>
-            </a>
-            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-solid fa-bug service-brand crashlytics-color"></i>
-              <div class="service-details">
-                <h4>Firebase Crashlytics</h4>
-                <p>Monitors crash logs, system failures, and stack traces to fix app bugs swiftly.</p>
-              </div>
-            </a>
+          <h3>5. Permissions We Request</h3>
+          <p><strong>Android</strong></p>
+          <ul>
+            <li><strong>Read/Write External Storage</strong> (Android 12 and below): Required to open and save PDF files you select.</li>
+            <li><strong>Internet Access</strong>: Required to initialize authentication and load advertisements.</li>
+            <li><strong>Network State</strong>: Required to determine connectivity before network operations.</li>
+          </ul>
+          <p><strong>iOS</strong></p>
+          <ul>
+            <li><strong>Photo Library (Read)</strong>: Required only when you choose to import images for conversion to PDF. You are prompted before access is granted.</li>
+            <li><strong>Photo Library (Write)</strong>: Required only when you choose to save converted pages to your photo library. You are prompted before access is granted.</li>
+          </ul>
+          <p class="helper-text"><i class="fa-solid fa-circle-info"></i> The App does not request permission to access your microphone, camera, location, contacts, or calendar for any functional purpose.</p>
+
+          <h3>6. Data Retention Policy</h3>
+          <div class="table-container">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Data Type</th>
+                  <th>Storage Location</th>
+                  <th>Retention Duration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anonymous User ID & Subscription Status</td>
+                  <td>Supabase Cloud Servers</td>
+                  <td>Until you request account deletion</td>
+                </tr>
+                <tr>
+                  <td>Recent Files History List</td>
+                  <td>Local Device Cache</td>
+                  <td>Until app data is cleared or uninstalled</td>
+                </tr>
+                <tr>
+                  <td>Theme and Configuration Settings</td>
+                  <td>Local Device Cache</td>
+                  <td>Until app data is cleared or uninstalled</td>
+                </tr>
+                <tr>
+                  <td>Temporary Converted/Edited PDFs</td>
+                  <td>Local Application Folder</td>
+                  <td>No automatic deletion; cleared on uninstall</td>
+                </tr>
+                <tr>
+                  <td>Your Original PDF Documents</td>
+                  <td>Local Device Directories</td>
+                  <td>Never collected or stored on our side</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <h3>4. Advertising & AdMob Integration</h3>
+          <h3>7. Data Security</h3>
           <p>
-            To provide the Application for free, we display ads using Google AdMob. AdMob may collect and process device-specific information (such as your mobile device’s Advertising ID, IP address, device model, language, and network details) to deliver targeted ads.
-          </p>
-          <p>
-            You can manage ad personalization settings through your device’s operating system configuration (e.g., "Limit Ad Tracking" on iOS or "Opt Out of Ads Personalization" on Android).
+            All communication between the App and our servers (Supabase) uses HTTPS encryption. Your anonymous session token is stored securely using SQLite-based local storage provided by Expo. We do not store payment card information — all payment processing is handled by Apple's App Store or Google Play Store systems.
           </p>
 
-          <h3>5. Cookies & Local Cache</h3>
+          <h3>8. Children's Privacy</h3>
           <p>
-            Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
-          </p>
-          <p>
-            The Application does not explicitly use these "cookies". However, the app may use third-party code and libraries (like SDKs for advertising and analytics) that use cookies to collect information and improve their services.
+            The App is configured with child-safe advertising settings (child-directed treatment enabled in AdMob). However, the App is a general-purpose productivity tool not specifically directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us at <a href="mailto:support@pdfx.app" class="styled-link">support@pdfx.app</a> and we will delete it.
           </p>
 
-          <h3>6. Security and Data Protection</h3>
+          <h3>9. Your Rights</h3>
+          <p><strong>All Users:</strong></p>
           <p>
-            The Service Provider values your trust in providing us your information. We strive to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage, is 100% secure and reliable, and the Service Provider cannot guarantee its absolute security.
+            Request deletion of your anonymous account and associated data by contacting <a href="mailto:support@pdfx.app" class="styled-link">support@pdfx.app</a>. Because your account is anonymous, we may ask you to provide your anonymous user ID (visible in app settings) or other verification.
+          </p>
+          <p><strong>European Union / EEA (GDPR):</strong></p>
+          <p>
+            You hold rights to access, rectification, erasure ("right to be forgotten"), restriction of processing, data portability, and the right to lodge complaints with a supervisory authority.
+          </p>
+          <p><strong>California (CCPA / CPRA):</strong></p>
+          <p>
+            You hold rights to know what personal info is collected, delete personal info, and opt-out of data sales (we do not sell your personal data).
           </p>
 
-          <h3>7. Children's Privacy</h3>
-          <p>
-            These Services do not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider so they can take the necessary actions.
-          </p>
-
-          <h3>8. Changes to This Privacy Policy</h3>
-          <p>
-            The Service Provider may update this Privacy Policy from time to time. You are advised to review this page periodically for any changes. The Service Provider will notify you of any changes by posting the new Privacy Policy on this page, and updating the "Last Updated" date at the top of the policy.
-          </p>
-
-          <h3>9. Contact Us</h3>
-          <p>
-            If you have any questions or suggestions regarding our Privacy Policy, do not hesitate to contact us at:
-          </p>
+          <h3>10. Contact Us</h3>
           <div class="contact-box glass-card">
             <i class="fa-solid fa-envelope contact-icon"></i>
             <div>
-              <h4>Developer Support</h4>
-              <p>Email: <a href="mailto:support@yourcompany.com" class="styled-link">support@yourcompany.com</a></p>
-              <p>Website: <a href="https://yourcompany.com" class="styled-link" target="_blank">https://yourcompany.com</a></p>
+              <h4>artokn support</h4>
+              <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
+              <p>Contact for Deletion: <a href="mailto:support@pdfx.app" class="styled-link">support@pdfx.app</a></p>
             </div>
           </div>
         </div>
@@ -245,68 +326,126 @@
           <h2>Terms & Conditions</h2>
           <div class="doc-meta">
             <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
-            <span><i class="fa-solid fa-scale-balanced"></i> Status: Active</span>
+            <span><i class="fa-solid fa-scale-balanced"></i> Developer: artokn</span>
           </div>
         </div>
         
         <div class="doc-body">
           <p class="lead-text">
-            By downloading, installing, or using the <strong>PDF X</strong> mobile application, these terms will automatically apply to you. Please read them carefully before using the app.
+            By downloading, installing, or using <strong>PDF X: Editor & Converter</strong> ("the App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
           </p>
 
-          <h3>1. Acceptance of Terms</h3>
           <p>
-            These Terms & Conditions constitute a legally binding agreement between you (the user) and <strong>[Your Company or Developer Name]</strong> (the Service Provider). If you do not agree to these terms, you must immediately uninstall the Application and cease all usage.
+            These Terms apply to all users of the App, including free users and premium subscribers.
           </p>
-
-          <h3>2. Scope of License</h3>
-          <p>
-            The Service Provider grants you a personal, non-transferable, non-exclusive, revocable, and limited license to download, install, and run the Application on compatible mobile devices that you own or control, solely for personal, non-commercial use.
-          </p>
-
-          <h3>3. Intellectual Property Rights</h3>
-          <p>
-            The Application, including its source code, databases, design, graphics, logo, features, functions, and standard utility assets, is owned by the Service Provider and protected by copyright, trademark, and intellectual property laws. You must not copy, modify, translate, reverse-engineer, extract, or attempt to recreate any part of the Application.
-          </p>
-
-          <h3>4. Prohibited Uses</h3>
-          <p>
-            You agree to use the Application lawfully and in compliance with these Terms. You are strictly prohibited from:
-          </p>
-          <ul>
-            <li>Using the Application to upload, convert, or process illegal, copyrighted, defamatory, or harmful content.</li>
-            <li>Attempting to bypass, disable, or interfere with security features or advertising networks embedded in the app.</li>
-            <li>Automating actions or exploiting the app for scrapers, bots, or distributed denials of service.</li>
-            <li>Using the Application in a manner that degrades service performance or harms the developer's reputation.</li>
-          </ul>
-
-          <div class="callout danger-callout">
-            <div class="callout-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          
+          <div class="callout info-callout">
+            <div class="callout-icon"><i class="fa-solid fa-circle-info"></i></div>
             <div class="callout-content">
-              <h4>Safety & Responsibility Limit</h4>
-              <p>You are solely responsible for keeping your device secure. The Service Provider is not liable for data loss, hardware damage, or unauthorized charges resulting from jailbroken/rooted devices, or unsecured internet connections.</p>
+              <h4>App Registration Information</h4>
+              <p><strong>Developer:</strong> artokn<br><strong>Contact Email:</strong> artokn7@gmail.com<br><strong>App Identifier:</strong> com.artokn.pdfx</p>
             </div>
           </div>
 
-          <h3>5. Disclaimer of Warranties</h3>
+          <h3>1. Description of the App</h3>
           <p>
-            THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. THE SERVICE PROVIDER DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE FREE OF BUGS, INTERRUPTIONS, OR ERRORS, OR THAT DATA WILL NEVER BE LOST.
+            PDF X: Editor & Converter is a mobile application for Android and iOS that allows users to:
+          </p>
+          <ul>
+            <li>View PDF files</li>
+            <li>Annotate and edit PDF files (add text, draw, insert shapes)</li>
+            <li>Convert images to PDF</li>
+            <li>Convert HTML/web content to PDF</li>
+            <li>Merge, split, rotate, and watermark PDF files</li>
+            <li>Create PDFs from text</li>
+          </ul>
+          <p>
+            The App functions primarily offline. An internet connection is required for account initialization and, on iOS, for purchasing premium subscriptions.
           </p>
 
-          <h3>6. Limitation of Liability</h3>
+          <h3>2. License Grant</h3>
           <p>
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE SERVICE PROVIDER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR USE, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APPLICATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+            Subject to these Terms, artokn grants you a personal, non-exclusive, non-transferable, revocable, limited license to download and use the App on devices you own or control, solely for your personal, non-commercial use.
+          </p>
+          <p><strong>Restrictions:</strong> You may not copy, modify, distribute, reverse-engineer, decompile, sell, or rent any portion of this application.</p>
+
+          <h3>3. User Content and Ownership</h3>
+          <p>
+            You retain full ownership of any PDF files, images, or documents you open, create, or modify using the App. We claim no intellectual property rights over your content.
+          </p>
+          <p>
+            You are solely responsible for the content of files you process using the App. You represent and warrant that you hold appropriate rights and will not process illegal or harmful documents.
           </p>
 
-          <h3>7. Changes to the App and Terms</h3>
+          <h3>4. Account Structure</h3>
           <p>
-            We are constantly updating and improving PDF X to offer the best features. The Service Provider reserves the right to make changes to the Application, charge for services, or alter these Terms & Conditions at any time. Changes to the Terms will be posted on this page, and your continued use of the app constitutes acceptance of the modified Terms.
+            The App automatically creates an anonymous account when you first launch it. No personal information is required. This anonymous account is used only to track your premium subscription status (if applicable).
+          </p>
+          <p>
+            <strong>Account Linking (Optional):</strong> You may optionally link your Apple ID, Google account, or email address to your anonymous account to preserve your subscription entitlements across reinstalls.
+          </p>
+          <p>
+            <strong>Account Termination:</strong> You may request deletion of your anonymous account at any time by contacting <a href="mailto:support@pdfx.app" class="styled-link">support@pdfx.app</a>.
           </p>
 
-          <h3>8. Governing Law</h3>
+          <h3>5. Premium Subscriptions (iOS)</h3>
           <p>
-            These Terms & Conditions and your use of the Application are governed by and construed in accordance with the laws of <strong>[Your Jurisdiction]</strong>, without regard to its conflict of law principles.
+            The App offers the following premium subscription options for iOS users:
           </p>
+          <ul>
+            <li><strong>Weekly subscription:</strong> Billed weekly, auto-renewing.</li>
+            <li><strong>Yearly subscription:</strong> Billed annually, auto-renewing, includes a 7-day free trial for new subscribers.</li>
+          </ul>
+          <p>Premium subscribers have access to all App features without advertisements.</p>
+          <p>
+            <strong>Free Trial:</strong> The yearly plan includes a 7-day trial. Your subscription begins unless cancelled 24 hours prior to the end of the trial period.
+          </p>
+          <p>
+            <strong>Billing & Refunds:</strong> Subscriptions and renewals are managed by Apple through your Apple ID settings. All refunds must be requested directly through Apple. Android version purchase is currently not available; Android remains free with advertisements.
+          </p>
+
+          <h3>6. Advertisements</h3>
+          <p>
+            Free users will see interstitial advertisements provided by Google AdMob approximately every two operations. Advertisements are served with non-personalized settings and child-safe content ratings. Premium subscribers do not see advertisements.
+          </p>
+
+          <h3>7. Intellectual Property</h3>
+          <p>
+            The App, including its design, code, graphics, and branding, is the property of artokn and is protected by copyright, trademark, and other intellectual property laws.
+          </p>
+
+          <h3>8. Disclaimer of Warranties</h3>
+          <p>
+            THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ARTOKN EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+          </p>
+
+          <h3>9. Limitation of Liability</h3>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, ARTOKN SHALL NOT BE HELD LIABLE FOR INDIRECT, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR DATA CORRUPTION.
+          </p>
+          
+          <div class="callout danger-callout">
+            <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="callout-content">
+              <h4>Backup Recommendation</h4>
+              <p>We strongly recommend maintaining backups of any important PDF files before using the App's editing or conversion features. We are not liable for any file loss, corruption, or unintended modification resulting from use of the App.</p>
+            </div>
+          </div>
+
+          <h3>10. Governing Law</h3>
+          <p>
+            These Terms are governed by and construed in accordance with applicable law. For users located in the European Union, mandatory consumer protection laws of your country of residence apply.
+          </p>
+
+          <h3>11. Contact Info</h3>
+          <div class="contact-box glass-card">
+            <i class="fa-solid fa-scale-balanced contact-icon"></i>
+            <div>
+              <h4>artokn Legal contact</h4>
+              <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
+              <p>Support: <a href="mailto:support@pdfx.app" class="styled-link">support@pdfx.app</a></p>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -315,15 +454,15 @@
 
   <footer class="app-footer">
     <div class="container footer-content">
-      <p>&copy; 2026 PDF X. All rights reserved.</p>
+      <p>&copy; 2026 PDF X: Editor & Converter. All rights reserved.</p>
       <div class="footer-links">
         <a href="#privacy-policy" onclick="setActiveTab('privacy-policy')">Privacy Policy</a>
         <span class="divider">|</span>
         <a href="#terms-conditions" onclick="setActiveTab('terms-conditions')">Terms & Conditions</a>
         <span class="divider">|</span>
-        <a href="mailto:support@yourcompany.com">Contact Support</a>
+        <a href="mailto:artokn7@gmail.com">Contact Support</a>
       </div>
-      <p class="disclaimer">Disclaimer: This is a customizable policy boilerplate template. Make sure to consult legal counsel before launching to ensure compliance with native privacy laws.</p>
+      <p class="disclaimer">Disclaimer: This policy webpage outlines the operational structures of PDF X: Editor & Converter, maintained by developer artokn.</p>
     </div>
   </footer>
 
