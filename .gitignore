@@ -1,0 +1,16 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Local system logs
+.system_generated/
+logs/

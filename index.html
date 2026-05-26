@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF X - Privacy Policy & Terms of Service</title>
+  <meta name="description" content="Official Privacy Policy, Terms and Conditions, and Developer Information for the PDF X mobile application.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Toggle & Floating Accents -->
+  <div class="glow-bg glow-blue"></div>
+  <div class="glow-bg glow-teal"></div>
+  
+  <header class="app-header">
+    <div class="container header-container">
+      <div class="logo-wrapper">
+        <!-- High-fidelity SVG recreating the PDF X app icon -->
+        <svg class="app-logo" viewBox="0 0 512 512" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Blue Gradient for the left slash -->
+            <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563eb" />
+              <stop offset="50%" stop-color="#3b82f6" />
+              <stop offset="100%" stop-color="#1d4ed8" />
+            </linearGradient>
+            <!-- Teal/Cyan Gradient for the right slash -->
+            <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#06b6d4" />
+              <stop offset="50%" stop-color="#0d9488" />
+              <stop offset="100%" stop-color="#14b8a6" />
+            </linearGradient>
+            <!-- Glossy red gradient for the PDF pill -->
+            <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ef4444" />
+              <stop offset="100%" stop-color="#b91c1c" />
+            </linearGradient>
+            <!-- Drop shadow for X legs -->
+            <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+              <feDropShadow dx="2" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+            </filter>
+            <!-- Inner gloss reflection for PDF pill -->
+            <linearGradient id="gloss" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          
+          <!-- Outer subtle shadow layer -->
+          <g filter="url(#shadow)">
+            <!-- Teal Slash (Bottom-Right to Top-Left) -->
+            <path d="M 390 120 
+                     C 410 120, 420 135, 410 155
+                     L 165 470 
+                     C 155 485, 140 490, 120 490 
+                     L 55 490 
+                     C 35 490, 25 475, 35 455 
+                     L 280 140 
+                     C 290 125, 305 120, 325 120 
+                     Z" fill="url(#tealGrad)" />
+
+            <!-- Blue Slash (Bottom-Left to Top-Right) - Folding over the teal one in the middle -->
+            <path d="M 120 120 
+                     C 100 120, 90 135, 100 155
+                     L 345 470 
+                     C 355 485, 370 490, 390 490 
+                     L 455 490 
+                     C 475 490, 485 475, 475 455 
+                     L 230 140 
+                     C 220 125, 205 120, 185 120 
+                     Z" fill="url(#blueGrad)" />
+          </g>
+
+          <!-- The Top-Left Glossy Red PDF Capsule Badge -->
+          <g filter="url(#shadow)">
+            <rect x="15" y="15" width="220" height="90" rx="45" ry="45" fill="url(#redGrad)" stroke="#ffffff" stroke-width="4"/>
+            <!-- Glossy Highlight inside the capsule -->
+            <rect x="25" y="20" width="200" height="40" rx="20" ry="20" fill="url(#gloss)" />
+            <!-- Bold "PDF" Text -->
+            <text x="125" y="76" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="52" fill="#ffffff" text-anchor="middle" letter-spacing="1">PDF</text>
+          </g>
+        </svg>
+      </div>
+      
+      <h1 class="app-title">PDF X</h1>
+      <p class="app-subtitle">Ultimate PDF Tools, Document Scanner, and Reader</p>
+      
+      <!-- Theme Switch Button -->
+      <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle visual theme" title="Toggle Light/Dark Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <!-- Quick Stats / Integration Bar -->
+    <section class="integration-cards">
+      <div class="card glass-card info-card">
+        <div class="card-icon blue-gradient-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="card-body">
+          <h3>AdMob App ID</h3>
+          <p class="card-desc">Required for Google AdMob SDK configuration in your mobile app codebase.</p>
+          <div class="copy-box">
+            <code id="admobId">ca-app-pub-3940256099942544~3347511713</code>
+            <button class="copy-btn" onclick="copyText('admobId', this)" title="Copy AdMob App ID">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copy</span>
+            </button>
+          </div>
+          <small class="helper-text"><i class="fa-solid fa-circle-info"></i> Replace this test ID with your actual AdMob App ID from the AdMob Console.</small>
+        </div>
+      </div>
+
+      <div class="card glass-card info-card">
+        <div class="card-icon teal-gradient-icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="card-body">
+          <h3>App-Ads.txt Config</h3>
+          <p class="card-desc">Authorize your ad inventory to secure ad revenue and comply with developer guidelines.</p>
+          <div class="copy-box">
+            <code id="appAdsText">google.com, pub-3940256099942544, DIRECT, f08c47fec0942fa0</code>
+            <button class="copy-btn" onclick="copyText('appAdsText', this)" title="Copy app-ads.txt line">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copy</span>
+            </button>
+          </div>
+          <small class="helper-text"><i class="fa-solid fa-circle-info"></i> Paste this into a file named <code>app-ads.txt</code> in your domain's root directory.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="navigation-tabs" role="tablist">
+      <button class="tab-link active" data-tab="privacy-policy" role="tab" aria-selected="true">
+        <i class="fa-solid fa-shield-halved"></i> Privacy Policy
+      </button>
+      <button class="tab-link" data-tab="terms-conditions" role="tab" aria-selected="false">
+        <i class="fa-solid fa-file-contract"></i> Terms & Conditions
+      </button>
+      <button class="tab-link" data-tab="developer-faq" role="tab" aria-selected="false">
+        <i class="fa-solid fa-laptop-code"></i> Developer Settings Info
+      </button>
+    </nav>
+
+    <!-- Content Sections -->
+    <section class="document-section glass-card">
+      
+      <!-- Privacy Policy Tab -->
+      <article id="privacy-policy" class="tab-content active" role="tabpanel">
+        <div class="doc-header">
+          <h2>Privacy Policy</h2>
+          <div class="doc-meta">
+            <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
+            <span><i class="fa-solid fa-shield"></i> Status: Active</span>
+          </div>
+        </div>
+        
+        <div class="doc-body">
+          <p class="lead-text">
+            This privacy policy applies to the <strong>PDF X</strong> app (herein referred to as "Application") for mobile devices, created by <strong>[Your Company or Developer Name]</strong> (herein referred to as "Service Provider") as a free/ad-supported service.
+          </p>
+
+          <h3>1. Introduction & Overview</h3>
+          <p>
+            The Service Provider is committed to protecting and respecting your privacy. This policy governs how we collect, store, process, and protect your information when you download, install, or use the Application.
+          </p>
+          <p>
+            By downloading, installing, or using the Application, you agree to the collection and use of information in accordance with this policy. If you do not agree with these terms, please do not use the Application.
+          </p>
+
+          <h3>2. Information Collection and Use</h3>
+          <p>
+            The Application is designed as a client-side document processing tool. To provide a rich utility, the Application may request access to certain features on your mobile device:
+          </p>
+          <ul>
+            <li><strong>Camera Access:</strong> Required to scan documents and capture papers to convert them to PDF files. All processing is done locally on your device.</li>
+            <li><strong>Storage / Media Files:</strong> Required to load existing PDF documents or images for editing, merging, and saving output files.</li>
+            <li><strong>Network Access:</strong> Required to download resources, fetch configuration, load advertisements, and send anonymized usage telemetry.</li>
+          </ul>
+
+          <div class="callout warning-callout">
+            <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="callout-content">
+              <h4>Local Data Processing Notice</h4>
+              <p>Your PDF documents, images, and scanned files are processed <strong>strictly on your device</strong>. We do not upload your personal documents to any remote servers. Your private files remain private.</p>
+            </div>
+          </div>
+
+          <h3>3. Third-Party Services & APIs</h3>
+          <p>
+            The Application utilizes third-party services that may collect information used to identify you. Below are details and links to the privacy policies of the third-party service providers used by the Application:
+          </p>
+          
+          <div class="services-grid">
+            <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-brands fa-google service-brand google-color"></i>
+              <div class="service-details">
+                <h4>Google Play Services</h4>
+                <p>Authenticates users, manages app stores, and powers core app ecosystem components.</p>
+              </div>
+            </a>
+            <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-brands fa-google service-brand admob-color"></i>
+              <div class="service-details">
+                <h4>Google AdMob</h4>
+                <p>Delivers relevant and personalized advertising. Collects advertising identifiers (e.g., Ad ID).</p>
+              </div>
+            </a>
+            <a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-solid fa-fire service-brand firebase-color"></i>
+              <div class="service-details">
+                <h4>Google Analytics for Firebase</h4>
+                <p>Measures user interactions, screen views, and demographic events to improve app performance.</p>
+              </div>
+            </a>
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+              <i class="fa-solid fa-bug service-brand crashlytics-color"></i>
+              <div class="service-details">
+                <h4>Firebase Crashlytics</h4>
+                <p>Monitors crash logs, system failures, and stack traces to fix app bugs swiftly.</p>
+              </div>
+            </a>
+          </div>
+
+          <h3>4. Advertising & AdMob Integration</h3>
+          <p>
+            To provide the Application for free, we display ads using Google AdMob. AdMob may collect and process device-specific information (such as your mobile device’s Advertising ID, IP address, device model, language, and network details) to deliver targeted ads.
+          </p>
+          <p>
+            You can manage ad personalization settings through your device’s operating system configuration (e.g., "Limit Ad Tracking" on iOS or "Opt Out of Ads Personalization" on Android).
+          </p>
+
+          <h3>5. Cookies & Local Cache</h3>
+          <p>
+            Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+          </p>
+          <p>
+            The Application does not explicitly use these "cookies". However, the app may use third-party code and libraries (like SDKs for advertising and analytics) that use cookies to collect information and improve their services.
+          </p>
+
+          <h3>6. Security and Data Protection</h3>
+          <p>
+            The Service Provider values your trust in providing us your information. We strive to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage, is 100% secure and reliable, and the Service Provider cannot guarantee its absolute security.
+          </p>
+
+          <h3>7. Children's Privacy</h3>
+          <p>
+            These Services do not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider so they can take the necessary actions.
+          </p>
+
+          <h3>8. Changes to This Privacy Policy</h3>
+          <p>
+            The Service Provider may update this Privacy Policy from time to time. You are advised to review this page periodically for any changes. The Service Provider will notify you of any changes by posting the new Privacy Policy on this page, and updating the "Last Updated" date at the top of the policy.
+          </p>
+
+          <h3>9. Contact Us</h3>
+          <p>
+            If you have any questions or suggestions regarding our Privacy Policy, do not hesitate to contact us at:
+          </p>
+          <div class="contact-box glass-card">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+              <h4>Developer Support</h4>
+              <p>Email: <a href="mailto:support@yourcompany.com" class="styled-link">support@yourcompany.com</a></p>
+              <p>Website: <a href="https://yourcompany.com" class="styled-link" target="_blank">https://yourcompany.com</a></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Terms & Conditions Tab -->
+      <article id="terms-conditions" class="tab-content" role="tabpanel">
+        <div class="doc-header">
+          <h2>Terms & Conditions</h2>
+          <div class="doc-meta">
+            <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
+            <span><i class="fa-solid fa-scale-balanced"></i> Status: Active</span>
+          </div>
+        </div>
+        
+        <div class="doc-body">
+          <p class="lead-text">
+            By downloading, installing, or using the <strong>PDF X</strong> mobile application, these terms will automatically apply to you. Please read them carefully before using the app.
+          </p>
+
+          <h3>1. Acceptance of Terms</h3>
+          <p>
+            These Terms & Conditions constitute a legally binding agreement between you (the user) and <strong>[Your Company or Developer Name]</strong> (the Service Provider). If you do not agree to these terms, you must immediately uninstall the Application and cease all usage.
+          </p>
+
+          <h3>2. Scope of License</h3>
+          <p>
+            The Service Provider grants you a personal, non-transferable, non-exclusive, revocable, and limited license to download, install, and run the Application on compatible mobile devices that you own or control, solely for personal, non-commercial use.
+          </p>
+
+          <h3>3. Intellectual Property Rights</h3>
+          <p>
+            The Application, including its source code, databases, design, graphics, logo, features, functions, and standard utility assets, is owned by the Service Provider and protected by copyright, trademark, and intellectual property laws. You must not copy, modify, translate, reverse-engineer, extract, or attempt to recreate any part of the Application.
+          </p>
+
+          <h3>4. Prohibited Uses</h3>
+          <p>
+            You agree to use the Application lawfully and in compliance with these Terms. You are strictly prohibited from:
+          </p>
+          <ul>
+            <li>Using the Application to upload, scan, or process illegal, copyrighted, defamatory, or harmful content.</li>
+            <li>Attempting to bypass, disable, or interfere with security features or advertising networks embedded in the app.</li>
+            <li>Automating actions or exploiting the app for scrapers, bots, or distributed denials of service.</li>
+            <li>Using the Application in a manner that degrades service performance or harms the developer's reputation.</li>
+          </ul>
+
+          <div class="callout danger-callout">
+            <div class="callout-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="callout-content">
+              <h4>Safety & Responsibility Limit</h4>
+              <p>You are solely responsible for keeping your device secure. The Service Provider is not liable for data loss, hardware damage, or unauthorized charges resulting from jailbroken/rooted devices, or unsecured internet connections.</p>
+            </div>
+          </div>
+
+          <h3>5. Disclaimer of Warranties</h3>
+          <p>
+            THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. THE SERVICE PROVIDER DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE FREE OF BUGS, INTERRUPTIONS, OR ERRORS, OR THAT DATA WILL NEVER BE LOST.
+          </p>
+
+          <h3>6. Limitation of Liability</h3>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE SERVICE PROVIDER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR USE, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APPLICATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          </p>
+
+          <h3>7. Changes to the App and Terms</h3>
+          <p>
+            We are constantly updating and improving PDF X to offer the best features. The Service Provider reserves the right to make changes to the Application, charge for services, or alter these Terms & Conditions at any time. Changes to the Terms will be posted on this page, and your continued use of the app constitutes acceptance of the modified Terms.
+          </p>
+
+          <h3>8. Governing Law</h3>
+          <p>
+            These Terms & Conditions and your use of the Application are governed by and construed in accordance with the laws of <strong>[Your Jurisdiction]</strong>, without regard to its conflict of law principles.
+          </p>
+        </div>
+      </article>
+
+      <!-- Developer FAQ / Settings Tab -->
+      <article id="developer-faq" class="tab-content" role="tabpanel">
+        <div class="doc-header">
+          <h2>Developer Configurations</h2>
+          <div class="doc-meta">
+            <span><i class="fa-solid fa-gear"></i> Developer Guide</span>
+            <span><i class="fa-solid fa-code-commit"></i> App: PDF X</span>
+          </div>
+        </div>
+        
+        <div class="doc-body">
+          <p class="lead-text">
+            This tab contains critical structural placeholders and integration steps to connect your AdMob account and link your Android/iOS projects with this policy page.
+          </p>
+
+          <div class="callout info-callout">
+            <div class="callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="callout-content">
+              <h4>AdMob Requirement for Play Store & App Store</h4>
+              <p>Google requires all publishers to declare their developer website in the app store listings. This website must host a valid <code>app-ads.txt</code> to fight fraud and secure ad earnings.</p>
+            </div>
+          </div>
+
+          <h3>1. Connecting Your Domain and App Store Listings</h3>
+          <p>
+            To activate your ad revenue and enable AdMob, follow these steps:
+          </p>
+          <ol>
+            <li><strong>Host this Webpage:</strong> Deploy these files (<code>index.html</code>, <code>style.css</code>, <code>app.js</code>) on your own web server or a free static host like GitHub Pages, Vercel, Netlify, or Firebase Hosting.</li>
+            <li><strong>Set Developer URL:</strong> In Google Play Console or Apple App Store Connect, update your store listing's "Developer Website" to point to your hosted website domain (e.g. <code>https://yourcompany.com</code>).</li>
+            <li><strong>Deploy app-ads.txt:</strong> Save a raw text file named <code>app-ads.txt</code> in the root of your domain (e.g., <code>https://yourcompany.com/app-ads.txt</code>) containing the AdMob lines provided in the cards above.</li>
+          </ol>
+
+          <h3>2. AdMob App IDs Reference</h3>
+          <p>
+            During Android or iOS application compilation, the AdMob App ID must be added in your app's main metadata descriptors:
+          </p>
+          
+          <h4>Android (AndroidManifest.xml)</h4>
+          <pre><code>&lt;manifest&gt;
+    &lt;application&gt;
+        &lt;!-- Sample Test ID shown. Replace with your actual AdMob App ID --&gt;
+        &lt;meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;</code></pre>
+
+          <h4>iOS (Info.plist)</h4>
+          <pre><code>&lt;key&gt;GADApplicationIdentifier&lt;/key&gt;
+&lt;string&gt;ca-app-pub-3940256099942544~3347511713&lt;/string&gt;</code></pre>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 PDF X. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy-policy" onclick="setActiveTab('privacy-policy')">Privacy Policy</a>
+        <span class="divider">|</span>
+        <a href="#terms-conditions" onclick="setActiveTab('terms-conditions')">Terms & Conditions</a>
+        <span class="divider">|</span>
+        <a href="mailto:support@yourcompany.com">Contact Support</a>
+      </div>
+      <p class="disclaimer">Disclaimer: This is a customizable policy boilerplate template. Make sure to consult legal counsel before launching to ensure compliance with native privacy laws.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
