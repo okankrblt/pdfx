@@ -65,7 +65,7 @@ function initDeepLinking() {
   // Check if standard hash exists in URL
   const hash = window.location.hash.substring(1);
   if (hash) {
-    const validTabs = ['privacy-policy', 'terms-conditions', 'developer-faq'];
+    const validTabs = ['privacy-policy', 'terms-conditions'];
     if (validTabs.includes(hash)) {
       setActiveTab(hash);
       
@@ -88,61 +88,6 @@ function initDeepLinking() {
   });
 }
 
-/* --------------------------------------------------------------------------
-   3. Copy to Clipboard Utility
-   -------------------------------------------------------------------------- */
-async function copyText(elementId, buttonElement) {
-  const codeElement = document.getElementById(elementId);
-  if (!codeElement) return;
-
-  const rawText = codeElement.textContent.trim();
-
-  try {
-    // Modern asynchronous clipboard API
-    await navigator.clipboard.writeText(rawText);
-    showCopyFeedback(buttonElement);
-  } catch (err) {
-    // Fallback approach for older browsers or non-HTTPS domains
-    const tempTextArea = document.createElement('textarea');
-    tempTextArea.value = rawText;
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
-    
-    try {
-      document.execCommand('copy');
-      showCopyFeedback(buttonElement);
-    } catch (fallbackErr) {
-      console.error('Failed to copy to clipboard: ', fallbackErr);
-    }
-    
-    document.body.removeChild(tempTextArea);
-  }
-}
-
-/**
- * Animates the copy button to provide feedback
- * @param {HTMLElement} btn - The clicked button node
- */
-function showCopyFeedback(btn) {
-  const icon = btn.querySelector('i');
-  const label = btn.querySelector('span');
-  
-  // Cache original states
-  const originalText = label.textContent;
-  const originalIconClass = icon.className;
-
-  // Set copied states
-  btn.classList.add('copied');
-  label.textContent = 'Copied!';
-  icon.className = 'fa-solid fa-check';
-
-  // Restore original state after interval
-  setTimeout(() => {
-    btn.classList.remove('copied');
-    label.textContent = originalText;
-    icon.className = originalIconClass;
-  }, 2000);
-}
 
 /* --------------------------------------------------------------------------
    4. Theme Switcher (Light / Dark Mode)

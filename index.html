@@ -103,45 +103,6 @@
   </header>
 
   <main class="main-content container">
-    <!-- Quick Stats / Integration Bar -->
-    <section class="integration-cards">
-      <div class="card glass-card info-card">
-        <div class="card-icon blue-gradient-icon">
-          <i class="fa-solid fa-code"></i>
-        </div>
-        <div class="card-body">
-          <h3>AdMob App ID</h3>
-          <p class="card-desc">Required for Google AdMob SDK configuration in your mobile app codebase.</p>
-          <div class="copy-box">
-            <code id="admobId">ca-app-pub-3940256099942544~3347511713</code>
-            <button class="copy-btn" onclick="copyText('admobId', this)" title="Copy AdMob App ID">
-              <i class="fa-regular fa-copy"></i>
-              <span>Copy</span>
-            </button>
-          </div>
-          <small class="helper-text"><i class="fa-solid fa-circle-info"></i> Replace this test ID with your actual AdMob App ID from the AdMob Console.</small>
-        </div>
-      </div>
-
-      <div class="card glass-card info-card">
-        <div class="card-icon teal-gradient-icon">
-          <i class="fa-solid fa-globe"></i>
-        </div>
-        <div class="card-body">
-          <h3>App-Ads.txt Config</h3>
-          <p class="card-desc">Authorize your ad inventory to secure ad revenue and comply with developer guidelines.</p>
-          <div class="copy-box">
-            <code id="appAdsText">google.com, pub-3940256099942544, DIRECT, f08c47fec0942fa0</code>
-            <button class="copy-btn" onclick="copyText('appAdsText', this)" title="Copy app-ads.txt line">
-              <i class="fa-regular fa-copy"></i>
-              <span>Copy</span>
-            </button>
-          </div>
-          <small class="helper-text"><i class="fa-solid fa-circle-info"></i> Paste this into a file named <code>app-ads.txt</code> in your domain's root directory.</small>
-        </div>
-      </div>
-    </section>
-
     <!-- Navigation Tabs -->
     <nav class="navigation-tabs" role="tablist">
       <button class="tab-link active" data-tab="privacy-policy" role="tab" aria-selected="true">
@@ -149,9 +110,6 @@
       </button>
       <button class="tab-link" data-tab="terms-conditions" role="tab" aria-selected="false">
         <i class="fa-solid fa-file-contract"></i> Terms & Conditions
-      </button>
-      <button class="tab-link" data-tab="developer-faq" role="tab" aria-selected="false">
-        <i class="fa-solid fa-laptop-code"></i> Developer Settings Info
       </button>
     </nav>
 
@@ -349,60 +307,6 @@
           <p>
             These Terms & Conditions and your use of the Application are governed by and construed in accordance with the laws of <strong>[Your Jurisdiction]</strong>, without regard to its conflict of law principles.
           </p>
-        </div>
-      </article>
-
-      <!-- Developer FAQ / Settings Tab -->
-      <article id="developer-faq" class="tab-content" role="tabpanel">
-        <div class="doc-header">
-          <h2>Developer Configurations</h2>
-          <div class="doc-meta">
-            <span><i class="fa-solid fa-gear"></i> Developer Guide</span>
-            <span><i class="fa-solid fa-code-commit"></i> App: PDF X</span>
-          </div>
-        </div>
-        
-        <div class="doc-body">
-          <p class="lead-text">
-            This tab contains critical structural placeholders and integration steps to connect your AdMob account and link your Android/iOS projects with this policy page.
-          </p>
-
-          <div class="callout info-callout">
-            <div class="callout-icon"><i class="fa-solid fa-lightbulb"></i></div>
-            <div class="callout-content">
-              <h4>AdMob Requirement for Play Store & App Store</h4>
-              <p>Google requires all publishers to declare their developer website in the app store listings. This website must host a valid <code>app-ads.txt</code> to fight fraud and secure ad earnings.</p>
-            </div>
-          </div>
-
-          <h3>1. Connecting Your Domain and App Store Listings</h3>
-          <p>
-            To activate your ad revenue and enable AdMob, follow these steps:
-          </p>
-          <ol>
-            <li><strong>Host this Webpage:</strong> Deploy these files (<code>index.html</code>, <code>style.css</code>, <code>app.js</code>) on your own web server or a free static host like GitHub Pages, Vercel, Netlify, or Firebase Hosting.</li>
-            <li><strong>Set Developer URL:</strong> In Google Play Console or Apple App Store Connect, update your store listing's "Developer Website" to point to your hosted website domain (e.g. <code>https://yourcompany.com</code>).</li>
-            <li><strong>Deploy app-ads.txt:</strong> Save a raw text file named <code>app-ads.txt</code> in the root of your domain (e.g., <code>https://yourcompany.com/app-ads.txt</code>) containing the AdMob lines provided in the cards above.</li>
-          </ol>
-
-          <h3>2. AdMob App IDs Reference</h3>
-          <p>
-            During Android or iOS application compilation, the AdMob App ID must be added in your app's main metadata descriptors:
-          </p>
-          
-          <h4>Android (AndroidManifest.xml)</h4>
-          <pre><code>&lt;manifest&gt;
-    &lt;application&gt;
-        &lt;!-- Sample Test ID shown. Replace with your actual AdMob App ID --&gt;
-        &lt;meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/&gt;
-    &lt;/application&gt;
-&lt;/manifest&gt;</code></pre>
-
-          <h4>iOS (Info.plist)</h4>
-          <pre><code>&lt;key&gt;GADApplicationIdentifier&lt;/key&gt;
-&lt;string&gt;ca-app-pub-3940256099942544~3347511713&lt;/string&gt;</code></pre>
         </div>
       </article>
 
