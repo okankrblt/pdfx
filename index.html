@@ -121,25 +121,27 @@
         <div class="doc-header">
           <h2>Privacy Policy</h2>
           <div class="doc-meta">
-            <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
+            <span><i class="fa-solid fa-clock"></i> Last Updated: May 28, 2026</span>
             <span><i class="fa-solid fa-shield"></i> Developer: artokn</span>
           </div>
         </div>
         
         <div class="doc-body">
           <p class="lead-text">
-            <strong>PDF X: Editor & Converter</strong> ("the App", "we", "our", or "us") is developed and operated by <strong>artokn</strong>. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use our App.
+            <strong>PDF X: Editor & Converter</strong><br>
+            Last updated: May 28, 2026
+          </p>
+          <hr class="section-divider" style="border: 0; height: 1px; background: var(--border-color); margin-bottom: 2rem;">
+
+          <h3>1. Introduction</h3>
+          <p>
+            PDF X: Editor & Converter ("the App", "we", "our", or "us") is developed and operated by artokn. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use our App.
           </p>
           <p>
             By using the App, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the App.
           </p>
-
-          <h3>1. Introduction</h3>
           <p>
-            We are dedicated to maintaining a high standard of document privacy. The App is engineered as a privacy-focused tool where your source files are processed client-side. We do not inspect your document contents, nor do we run background user tracking utilities.
-          </p>
-          <p>
-            <strong>Contact Email:</strong> <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>
+            <strong>Contact:</strong> <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>
           </p>
 
           <h3>2. Information We Collect</h3>
@@ -147,7 +149,7 @@
           <h4>2.1 Information We Collect Automatically</h4>
           <p><strong>Anonymous User Identifier</strong></p>
           <p>
-            When you first launch the App, we automatically create an anonymous account on your behalf using Supabase, our backend provider. This account is identified only by a randomly generated UUID (a string like <code>a3f9c1d2-...</code>). This ID contains no personal information and is not linked to your name, email address, or any other identifying information unless you choose to link an account.
+            When you first launch the App, we automatically create an anonymous account on your behalf using Supabase, our backend provider. This account is identified only by a randomly generated UUID (a string like <code>a3f9c1d2-...</code>). This ID contains no personal information and is not linked to your name, email address, or any other identifying information unless you choose to link an account (see Section 2.3).
           </p>
           <p>
             This ID is used solely to maintain your session within the App.
@@ -164,34 +166,28 @@
           </ul>
 
           <h4>2.2 Information We Do NOT Collect</h4>
-          <p>We strictly do not collect or monitor:</p>
+          <p>We do not collect:</p>
           <ul>
             <li>Your name, email address, or phone number (unless you voluntarily link an account)</li>
             <li>Your precise or approximate location</li>
             <li>Your contacts, calendar, or camera</li>
             <li>Any content within your PDF files</li>
             <li>Any behavioral analytics or usage tracking</li>
+            <li>Any advertising identifiers — the App contains no advertising</li>
             <li>Device identifiers such as IMEI or MAC address (this is outside our app's code)</li>
           </ul>
 
           <h4>2.3 Information Collected by Third Parties</h4>
           <p>
-            The App integrates third-party services that have their own privacy practices. We do not control the data these services collect.
+            The App integrates third-party services that have their own privacy practices. We do not control the data these services collect. The App contains no advertising and no in-app purchases.
           </p>
 
           <div class="services-grid">
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
-              <i class="fa-brands fa-google service-brand admob-color"></i>
-              <div class="service-details">
-                <h4>Google AdMob (Advertising)</h4>
-                <p>Free users see non-personalized interstitial advertisements rated PG with child-directed settings enabled.</p>
-              </div>
-            </a>
-            <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card">
+            <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" class="service-item glass-card" style="max-width: 400px;">
               <i class="fa-solid fa-database service-brand firebase-color"></i>
               <div class="service-details">
                 <h4>Supabase (Backend Infrastructure)</h4>
-                <p>Powers our database system and processes anonymous user UUIDs securely.</p>
+                <p>Our authentication service is provided by Supabase. Supabase processes and stores the anonymous user identifiers described in Section 2.1. Supabase's privacy policy is available at https://supabase.com/privacy.</p>
               </div>
             </a>
           </div>
@@ -200,10 +196,15 @@
           <p>We use the information described above to:</p>
           <ul>
             <li>Create and maintain your anonymous account</li>
-            <li>Serve non-personalized advertisements</li>
             <li>Maintain your theme preference and recent file list locally on your device</li>
           </ul>
-          <p>We absolutely do not use your information for behavioral advertising or data renting.</p>
+          <p>We do not use your information for:</p>
+          <ul>
+            <li>Behavioral advertising or tracking</li>
+            <li>Selling or renting data to third parties</li>
+            <li>Building profiles about your behavior or interests</li>
+            <li>Any purpose unrelated to providing the App's functionality</li>
+          </ul>
 
           <h3>4. Your Files and Documents</h3>
           <p>
@@ -212,7 +213,7 @@
           <div class="callout warning-callout">
             <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
             <div class="callout-content">
-              <h4>Temporary Document Clean-Up</h4>
+              <h4>Temporary Files</h4>
               <p>Temporary files created during editing or conversion operations (e.g., <code>converted_&lt;timestamp&gt;.pdf</code>) are stored in your device's application storage directory. These files are not automatically deleted. You can remove them by clearing the App's storage or uninstalling the App.</p>
             </div>
           </div>
@@ -220,52 +221,52 @@
           <h3>5. Permissions We Request</h3>
           <p><strong>Android</strong></p>
           <ul>
-            <li><strong>Read/Write External Storage</strong> (Android 12 and below): Required to open and save PDF files you select.</li>
-            <li><strong>Internet Access</strong>: Required to initialize authentication and load advertisements.</li>
-            <li><strong>Network State</strong>: Required to determine connectivity before network operations.</li>
+            <li><strong>Read/Write External Storage</strong> (Android 12 and below): Required to open and save PDF files you select</li>
+            <li><strong>Internet Access</strong>: Required to initialize authentication</li>
+            <li><strong>Network State</strong>: Required to determine connectivity before network operations</li>
           </ul>
           <p><strong>iOS</strong></p>
           <ul>
             <li><strong>Photo Library (Read)</strong>: Required only when you choose to import images for conversion to PDF. You are prompted before access is granted.</li>
             <li><strong>Photo Library (Write)</strong>: Required only when you choose to save converted pages to your photo library. You are prompted before access is granted.</li>
           </ul>
-          <p class="helper-text"><i class="fa-solid fa-circle-info"></i> The App does not request permission to access your microphone, camera, location, contacts, or calendar for any functional purpose.</p>
+          <p class="helper-text"><i class="fa-solid fa-circle-info"></i> The App does not request permission to access your microphone, camera, location, contacts, or calendar for any functional purpose. If such a permission appears on your device, it is a residual declaration from a third-party library dependency and is not exercised by this App.</p>
 
-          <h3>6. Data Retention Policy</h3>
+          <h3>6. Data Retention</h3>
           <div class="table-container">
             <table class="policy-table">
               <thead>
                 <tr>
-                  <th>Data Type</th>
-                  <th>Storage Location</th>
-                  <th>Retention Duration</th>
+                  <th>Data</th>
+                  <th>Location</th>
+                  <th>Retention</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Anonymous User ID & Subscription Status</td>
-                  <td>Supabase Cloud Servers</td>
-                  <td>Until you request account deletion</td>
+                  <td><strong>Anonymous user ID</strong></td>
+                  <td>Supabase servers</td>
+                  <td>Until you request deletion</td>
                 </tr>
                 <tr>
-                  <td>Recent Files History List</td>
-                  <td>Local Device Cache</td>
-                  <td>Until app data is cleared or uninstalled</td>
+                  <td><strong>Recent files list</strong></td>
+                  <td>Your device</td>
+                  <td>Until you clear app data or uninstall</td>
                 </tr>
                 <tr>
-                  <td>Theme and Configuration Settings</td>
-                  <td>Local Device Cache</td>
-                  <td>Until app data is cleared or uninstalled</td>
+                  <td><strong>Theme preference</strong></td>
+                  <td>Your device</td>
+                  <td>Until you clear app data or uninstall</td>
                 </tr>
                 <tr>
-                  <td>Temporary Converted/Edited PDFs</td>
-                  <td>Local Application Folder</td>
-                  <td>No automatic deletion; cleared on uninstall</td>
+                  <td><strong>Temporary converted/edited PDFs</strong></td>
+                  <td>Your device</td>
+                  <td>No automatic deletion</td>
                 </tr>
                 <tr>
-                  <td>Your Original PDF Documents</td>
-                  <td>Local Device Directories</td>
-                  <td>Never collected or stored on our side</td>
+                  <td><strong>Your original PDFs</strong></td>
+                  <td>Your device</td>
+                  <td>Never stored by us</td>
                 </tr>
               </tbody>
             </table>
@@ -273,45 +274,87 @@
 
           <h3>7. Data Security</h3>
           <p>
-            All communication between the App and our servers (Supabase) uses HTTPS encryption. Your anonymous session token is stored securely using SQLite-based local storage provided by Expo. We do not store payment card information — all payment processing is handled by Apple's App Store.
+            All communication between the App and our servers (Supabase) uses HTTPS encryption. Your anonymous session token is stored securely using SQLite-based local storage provided by Expo. The App does not process payments and does not collect or store any payment information.
           </p>
 
           <h3>8. Children's Privacy</h3>
           <p>
-            The App is configured with child-safe advertising settings (child-directed treatment enabled in AdMob). However, the App is a general-purpose productivity tool not specifically directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us at <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a> and we will delete it.
+            The App contains no advertising. It is a general-purpose productivity tool not specifically directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us at <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a> and we will delete it.
           </p>
 
           <h3>9. Your Rights</h3>
-          <p><strong>All Users:</strong></p>
-          <p>
-            Request deletion of your anonymous account and associated data by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Because your account is anonymous, we may ask you to provide your anonymous user ID or other verification.
-          </p>
+          <p>Depending on your location, you may have the following rights:</p>
+          
+          <p><strong>All users:</strong></p>
+          <ul>
+            <li>Request deletion of your anonymous account and associated data by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Because your account is anonymous, we may ask you to provide your anonymous user ID or other verification.</li>
+          </ul>
 
-          <div class="callout info-callout">
+          <div class="callout info-callout" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
             <div class="callout-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-            <div class="callout-content">
-              <h4>Turkey (KVKK — Protection of Personal Data)</h4>
-              <p>As the data controller (veri sorumlusu), artokn processes personal data in accordance with Turkish Law No. 6698 on the Protection of Personal Data (KVKK). Under Article 11 of KVKK, you hold rights to learn of processed data, check details, request rectification or erasure under Article 7, and object to outcomes arising from automated processing. To exercise KVKK rights, submit your request to <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. You may also appeal to the KVKK Board at www.kvkk.gov.tr.</p>
+            <div class="callout-content" style="width: 100%;">
+              <h4 style="color: #3b82f6; font-size: 1.1rem; margin-bottom: 0.5rem;">Turkey (KVKK — Kişisel Verilerin Korunması Kanunu No. 6698)</h4>
+              <p>As the data controller (veri sorumlusu), artokn processes personal data in accordance with Turkish Law No. 6698 on the Protection of Personal Data (KVKK). Under Article 11 of KVKK, you have the right to:</p>
+              <ul style="margin-top: 0.5rem; margin-bottom: 0.75rem;">
+                <li>Learn whether your personal data is being processed</li>
+                <li>Request information about the purpose of processing and whether data is used in accordance with that purpose</li>
+                <li>Know the third parties to whom your data is transferred domestically or abroad</li>
+                <li>Request rectification of incomplete or inaccurate data</li>
+                <li>Request deletion or destruction of your data under the conditions set forth in Article 7</li>
+                <li>Request notification of corrections or deletions to third parties to whom data was transferred</li>
+                <li>Object to any outcome arising from automated processing of your data</li>
+                <li>Claim compensation for damages arising from unlawful processing of your data</li>
+              </ul>
+              <p>To exercise your rights under KVKK, submit a written request to <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. We will respond within 30 days. You may also submit a complaint to the Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu — KVKK) at www.kvkk.gov.tr.</p>
             </div>
           </div>
 
           <p><strong>European Union / EEA (GDPR):</strong></p>
-          <p>
-            You hold rights to access, rectification, erasure ("right to be forgotten"), restriction of processing, data portability, and the right to lodge complaints with a supervisory authority.
-          </p>
+          <ul>
+            <li>Right to access the data we hold about you</li>
+            <li>Right to rectification of inaccurate data</li>
+            <li>Right to erasure ("right to be forgotten")</li>
+            <li>Right to restriction of processing</li>
+            <li>Right to data portability</li>
+            <li>Right to object to processing</li>
+            <li>Right to lodge a complaint with your local supervisory authority</li>
+          </ul>
+
           <p><strong>California (CCPA / CPRA):</strong></p>
+          <ul>
+            <li>Right to know what personal information is collected</li>
+            <li>Right to delete personal information</li>
+            <li>Right to opt-out of the sale of personal information (we do not sell personal information)</li>
+            <li>Right to non-discrimination for exercising your rights</li>
+          </ul>
+
+          <p>To exercise any of these rights, contact us at <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>.</p>
+
+          <h3>10. Third-Party Links and Services</h3>
           <p>
-            You hold rights to know what personal info is collected, delete personal info, and opt-out of data sales (we do not sell your personal data).
+            The App does not contain links to third-party websites. The third-party service integrated into the App (Supabase) operates under its own privacy policy as linked in Section 2.3.
           </p>
 
-          <h3>10. Contact Us</h3>
+          <h3>11. Changes to This Privacy Policy</h3>
+          <p>
+            We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top. Continued use of the App after changes constitutes your acceptance of the revised policy. For significant changes, we will provide notice through the App where feasible.
+          </p>
+
+          <h3>12. Contact Us</h3>
+          <p>For questions, concerns, or requests regarding this Privacy Policy:</p>
           <div class="contact-box glass-card">
             <i class="fa-solid fa-envelope contact-icon"></i>
             <div>
-              <h4>artokn support</h4>
+              <h4>artokn Support</h4>
               <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
+              <p>App: PDF X: Editor & Converter</p>
+              <p>Developer: artokn</p>
             </div>
           </div>
+
+          <p class="helper-text" style="margin-top: 2rem;">
+            <i class="fa-solid fa-circle-info"></i> This Privacy Policy applies to the PDF X: Editor & Converter mobile application available on the Apple App Store and Google Play Store.
+          </p>
         </div>
       </article>
 
@@ -320,29 +363,35 @@
         <div class="doc-header">
           <h2>Terms & Conditions</h2>
           <div class="doc-meta">
-            <span><i class="fa-solid fa-clock"></i> Last Updated: May 26, 2026</span>
+            <span><i class="fa-solid fa-clock"></i> Last Updated: May 28, 2026</span>
             <span><i class="fa-solid fa-scale-balanced"></i> Developer: artokn</span>
           </div>
         </div>
         
         <div class="doc-body">
           <p class="lead-text">
-            By downloading, installing, or using <strong>PDF X: Editor & Converter</strong> ("the App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
+            <strong>PDF X: Editor & Converter</strong><br>
+            Last updated: May 28, 2026
           </p>
+          <hr class="section-divider" style="border: 0; height: 1px; background: var(--border-color); margin-bottom: 2rem;">
 
+          <h3>1. Acceptance of Terms</h3>
           <p>
-            These Terms apply to all users of the App, including free users and premium subscribers.
+            By downloading, installing, or using PDF X: Editor & Converter ("the App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, do not use the App.
+          </p>
+          <p>
+            These Terms apply to all users of the App. The App is free to use, contains no advertisements, and offers no in-app purchases or subscriptions.
           </p>
           
           <div class="callout info-callout">
             <div class="callout-icon"><i class="fa-solid fa-circle-info"></i></div>
             <div class="callout-content">
               <h4>App Registration Information</h4>
-              <p><strong>Developer:</strong> artokn<br><strong>Contact Email:</strong> artokn7@gmail.com<br><strong>App Identifier:</strong> com.artokn.pdfx</p>
+              <p><strong>Developer:</strong> artokn<br><strong>Contact:</strong> <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a><br><strong>App Identifier:</strong> com.artokn.pdfx</p>
             </div>
           </div>
 
-          <h3>1. Description of the App</h3>
+          <h3>2. Description of the App</h3>
           <p>
             PDF X: Editor & Converter is a mobile application for Android and iOS that allows users to:
           </p>
@@ -355,83 +404,201 @@
             <li>Create PDFs from text</li>
           </ul>
           <p>
-            The App functions primarily offline. An internet connection is required for account initialization.
+            The App functions primarily offline. An internet connection is required only for account initialization.
           </p>
 
-          <h3>2. License Grant</h3>
+          <h3>3. License</h3>
+          
+          <h4>3.1 Grant of License</h4>
           <p>
             Subject to these Terms, artokn grants you a personal, non-exclusive, non-transferable, revocable, limited license to download and use the App on devices you own or control, solely for your personal, non-commercial use.
           </p>
-          <p><strong>Restrictions:</strong> You may not copy, modify, distribute, reverse-engineer, decompile, sell, or rent any portion of this application.</p>
 
-          <h3>3. User Content and Ownership</h3>
+          <h4>3.2 Restrictions</h4>
+          <p>You may not:</p>
+          <ul>
+            <li>Copy, modify, or distribute the App or any part of it</li>
+            <li>Reverse engineer, decompile, or disassemble the App</li>
+            <li>Rent, lease, lend, sell, or sublicense the App</li>
+            <li>Remove or alter any proprietary notices or labels</li>
+            <li>Use the App for any unlawful purpose</li>
+            <li>Use the App to process or store content that violates applicable law</li>
+            <li>Attempt to gain unauthorized access to any servers or systems connected to the App</li>
+            <li>Use the App in any way that could damage, disable, or impair the App or its servers</li>
+          </ul>
+
+          <h3>4. User Content</h3>
+
+          <h4>4.1 Your Files</h4>
           <p>
             You retain full ownership of any PDF files, images, or documents you open, create, or modify using the App. We claim no intellectual property rights over your content.
           </p>
+
+          <h4>4.2 Your Responsibility</h4>
           <p>
-            You are solely responsible for the content of files you process using the App. You represent and warrant that you hold appropriate rights and will not process illegal or harmful documents.
+            You are solely responsible for the content of files you process using the App. You represent and warrant that:
+          </p>
+          <ul>
+            <li>You have the legal right to access and modify any files you use with the App</li>
+            <li>Your use of the App does not infringe the intellectual property, privacy, or other rights of any third party</li>
+            <li>You will not use the App to process content that is illegal, harmful, or that you are not authorized to access</li>
+          </ul>
+          <p>
+            We are not responsible for the content of files you process and bear no liability for any damages arising from your use of files within the App.
           </p>
 
-          <h3>4. Account Structure</h3>
+          <h3>5. Account</h3>
+
+          <h4>5.1 Anonymous Account</h4>
           <p>
-            The App automatically creates an anonymous account when you first launch it. No personal information is required. This anonymous account is used only to track your premium subscription status (if applicable).
-          </p>
-          <p>
-            <strong>Account Termination:</strong> You may request deletion of your anonymous account at any time by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Account deletion will remove your session data from our servers.
+            The App automatically creates an anonymous account when you first launch it. No personal information is required. This anonymous account is used only to maintain your session.
           </p>
 
-          <h3>5. Advertisements</h3>
+          <h4>5.2 Account Termination</h4>
           <p>
-            The App is free to use and is supported by interstitial advertisements provided by Google AdMob. Advertisements are served with non-personalized settings and child-safe content ratings.
-          </p>
-          <p>
-            We are not responsible for the content of third-party advertisements displayed within the App.
+            You may request deletion of your anonymous account at any time by contacting <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a>. Account deletion will remove your session data from our servers.
           </p>
 
-          <h3>6. Intellectual Property</h3>
+          <h3>6. No Advertisements or Purchases</h3>
           <p>
-            The App, including its design, code, graphics, and branding, is the property of artokn and is protected by copyright, trademark, and other intellectual property laws. Nothing in these Terms grants you any right, title, or interest in the App beyond the limited license described in Section 2.
+            The App is free to use. It does not display advertisements and does not offer any in-app purchases, subscriptions, or paid features.
           </p>
 
-          <h3>7. Privacy Policy</h3>
+          <h3>8. Intellectual Property</h3>
+          <p>
+            The App, including its design, code, graphics, and branding, is the property of artokn and is protected by copyright, trademark, and other intellectual property laws. Nothing in these Terms grants you any right, title, or interest in the App beyond the limited license described in Section 3.
+          </p>
+
+          <h3>9. Privacy</h3>
           <p>
             Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. You can read the full Privacy Policy at the link provided in the App's settings screen.
           </p>
 
-          <h3>8. Disclaimer of Warranties</h3>
+          <h3>10. Disclaimer of Warranties</h3>
           <p>
-            THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ARTOKN EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+            THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ARTOKN EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:
+          </p>
+          <ul>
+            <li>WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT</li>
+            <li>THAT THE APP WILL MEET YOUR REQUIREMENTS</li>
+            <li>THAT THE APP WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE</li>
+            <li>THAT RESULTS FROM USING THE APP WILL BE ACCURATE OR RELIABLE</li>
+            <li>THAT ANY ERRORS WILL BE CORRECTED</li>
+          </ul>
+
+          <h3>11. Limitation of Liability</h3>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL ARTOKN, ITS AFFILIATES, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY:
+          </p>
+          <ul>
+            <li>INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES</li>
+            <li>LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL</li>
+            <li>COST OF SUBSTITUTE SERVICES</li>
+            <li>DAMAGES ARISING FROM LOSS, CORRUPTION, OR UNAUTHORIZED ACCESS TO YOUR FILES</li>
+          </ul>
+          <p>
+            EVEN IF ARTOKN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          </p>
+          <p>
+            IN JURISDICTIONS THAT DO NOT ALLOW THE EXCLUSION OF CERTAIN DAMAGES, OUR LIABILITY IS LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW. IN ALL CASES, OUR TOTAL CUMULATIVE LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE 12 MONTHS PRECEDING THE CLAIM.
           </p>
 
-          <h3>9. Limitation of Liability</h3>
-          <p>
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, ARTOKN SHALL NOT BE HELD LIABLE FOR INDIRECT, SPECIAL, OR CONSEQUENTIAL DAMAGES, OR DATA CORRUPTION.
-          </p>
-          
           <div class="callout danger-callout">
             <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
             <div class="callout-content">
-              <h4>Backup Recommendation</h4>
+              <h4>11.1 File Loss</h4>
               <p>We strongly recommend maintaining backups of any important PDF files before using the App's editing or conversion features. We are not liable for any file loss, corruption, or unintended modification resulting from use of the App.</p>
             </div>
           </div>
 
-          <h3>10. Governing Law</h3>
+          <h3>12. Indemnification</h3>
+          <p>
+            You agree to indemnify, defend, and hold harmless artokn and its affiliates from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising from your:
+          </p>
+          <ul>
+            <li>Use of the App in violation of these Terms</li>
+            <li>Processing of content you do not have the right to use</li>
+            <li>Violation of any applicable law or third-party rights</li>
+          </ul>
+
+          <h3>13. Third-Party Services</h3>
+          <p>
+            The App integrates Supabase for backend authentication. Your use of this service is governed by its terms of service and privacy policy. We are not responsible for the practices of these third parties.
+          </p>
+          <ul>
+            <li>Supabase: <a href="https://supabase.com/terms" target="_blank" rel="noopener noreferrer" class="styled-link">https://supabase.com/terms</a></li>
+            <li>Apple App Store: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" class="styled-link">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></li>
+            <li>Google Play: <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank" rel="noopener noreferrer" class="styled-link">https://play.google.com/intl/en_us/about/play-terms/</a></li>
+          </ul>
+
+          <h3>14. Updates and Modifications</h3>
+
+          <h4>14.1 App Updates</h4>
+          <p>
+            We may release updates to the App from time to time. Some updates may be required to continue using the App. We reserve the right to add, modify, suspend, or discontinue any feature of the App at any time without notice.
+          </p>
+
+          <h4>14.2 Changes to Terms</h4>
+          <p>
+            We reserve the right to modify these Terms at any time. When we make material changes, we will update the "Last updated" date at the top of this document. Your continued use of the App after changes constitutes your acceptance of the revised Terms.
+          </p>
+
+          <h3>15. Termination</h3>
+          <p>
+            We reserve the right to suspend or terminate your access to the App at any time, for any reason, including if we reasonably believe you have violated these Terms. Upon termination:
+          </p>
+          <ul>
+            <li>Your license to use the App ends immediately</li>
+            <li>You must stop using the App and delete it from your devices</li>
+            <li>Provisions that by their nature should survive termination (Sections 8, 10, 11, 12) shall survive</li>
+          </ul>
+
+          <h3>16. Governing Law</h3>
           <p>
             These Terms are governed by the laws of the Republic of Turkey. If you have a concern or dispute, please contact us first at <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a> and we will do our best to resolve it.
           </p>
 
-          <h3>11. Contact Info</h3>
+          <h3>17. Apple App Store and Google Play Additional Terms</h3>
+          <p>
+            To the extent you downloaded the App from the Apple App Store, you acknowledge:
+          </p>
+          <ul>
+            <li>These Terms are between you and artokn only, not Apple</li>
+            <li>Apple is not responsible for the App or its content</li>
+            <li>Apple has no obligation to provide maintenance or support for the App</li>
+            <li>Apple is a third-party beneficiary of these Terms with the right to enforce them against you</li>
+          </ul>
+          <p>
+            To the extent you downloaded the App from Google Play, Google's terms of service also apply.
+          </p>
+
+          <h3>18. Severability</h3>
+          <p>
+            If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the remaining Terms remain in full force and effect.
+          </p>
+
+          <h3>19. Entire Agreement</h3>
+          <p>
+            These Terms and our Privacy Policy constitute the entire agreement between you and artokn regarding the App, and supersede any prior agreements or understandings.
+          </p>
+
+          <h3>20. Contact</h3>
+          <p>For questions about these Terms or to report a violation:</p>
           <div class="contact-box glass-card">
-            <i class="fa-solid fa-scale-balanced contact-icon"></i>
+            <i class="fa-solid fa-envelope contact-icon"></i>
             <div>
-              <h4>artokn Legal contact</h4>
+              <h4>artokn Contact</h4>
               <p>Email: <a href="mailto:artokn7@gmail.com" class="styled-link">artokn7@gmail.com</a></p>
+              <p>App: PDF X: Editor & Converter</p>
+              <p>Developer: artokn</p>
             </div>
           </div>
+
+          <p class="helper-text" style="margin-top: 2rem;">
+            <i class="fa-solid fa-circle-info"></i> These Terms and Conditions apply to the PDF X: Editor & Converter mobile application available on the Apple App Store and Google Play Store.
+          </p>
         </div>
       </article>
-
     </section>
   </main>
 
